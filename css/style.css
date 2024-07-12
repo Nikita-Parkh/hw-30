@@ -1,0 +1,38 @@
+.div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    animation: animateDiv 3s infinite alternate;
+}
+@keyframes animateDiv{
+    0%{
+        top:50%;
+        left: 50%;
+        background-color:red;
+
+    }
+    25%{
+        top: 50%;
+        left: 70%;
+        background-color: yellow;
+    }
+    50%{
+        top: 70%;
+        left: 70%;
+        background-color:green;
+    }
+    75%{
+        top: 70%;
+        left: 50%;
+        background-color: blue;
+    }
+    100%{
+        top: 50%;
+        left: 50%;
+        background-color: red;
+    }
+}
